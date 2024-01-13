@@ -15,7 +15,9 @@ help = """
 :information_desk_person: [bold]Global API Key[/bold] authentication required for the [u]/accounts/:account_id/sso/v2/connectors[/u] endpoint.
 https://developers.cloudflare.com/fundamentals/api/get-started/keys/#get-global-api-key-legacy
 """
-app = typer.Typer(help=help, no_args_is_help=True, rich_markup_mode="rich")
+app = typer.Typer(
+    add_completion=False, help=help, no_args_is_help=True, rich_markup_mode="rich"
+)
 
 CLOUDFLARE_EMAIL = os.environ.get("CLOUDFLARE_EMAIL")
 CLOUDFLARE_API_KEY = os.environ.get("CLOUDFLARE_API_KEY")
