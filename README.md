@@ -49,9 +49,3 @@ $ cflr sso list :account_id
 $ cflr sso disable :account_id  # an interactive pick list is returned
 $ cflr sso enable :account_id   # an interactive pick list is returned
 ```
-
----
-
-## Todo
-
-- [ ] publish to PyPi

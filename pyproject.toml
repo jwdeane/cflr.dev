@@ -1,13 +1,16 @@
 [project]
 name = "cflr"
+version = "0.0.1"
 description = "A Cloudflare Admin CLI."
-version = "0.1.0"
+keywords = ["cloudflare", "cli"]
+readme = "README.md"
+authors = [{ name = "James Deane", email = "dev@jwdeane.com" }]
+
 requires-python = ">=3.11"
-authors = [{ name = "James Deane", email = "jdeane@cloudflare.com" }]
 classifiers = [
-  "Operating System :: MacOS :: MacOS X",
-  # "Operating System :: Microsoft :: Windows", # Untested
-  "Private :: Do Not Upload",
+  "Programming Language :: Python :: 3.11",
+  "License :: OSI Approved :: MIT License",
+  "Operating System :: OS Independent",
 ]
 
 dependencies = ["httpx", "pydantic", "questionary", "typer[all]"]
@@ -19,7 +22,8 @@ dev = ["black", "ruff", "pytest"]
 cflr = "cflr.cli:app"
 
 [project.urls]
-homepage = "https://www.cflr.dev"
+homepage = "https://github.com/25thhour/cflr.dev"
+issues = "https://github.com/25thhour/cflr.dev/issues"
 
 [build-system]
 requires = ["setuptools"]
