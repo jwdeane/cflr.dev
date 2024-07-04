@@ -4,7 +4,7 @@ version = "0.0.1"
 description = "A Cloudflare Admin CLI."
 keywords = ["cloudflare", "cli"]
 readme = "README.md"
-authors = [{ name = "James Deane", email = "dev@jwdeane.com" }]
+authors = [{ name = "James Deane", email = "git@jwdeane.com" }]
 
 requires-python = ">=3.11"
 classifiers = [
@@ -22,8 +22,8 @@ dev = ["black", "ruff", "pytest"]
 cflr = "cflr.cli:app"
 
 [project.urls]
-homepage = "https://github.com/25thhour/cflr.dev"
-issues = "https://github.com/25thhour/cflr.dev/issues"
+homepage = "https://github.com/jwdeane/cflr.dev"
+issues = "https://github.com/jwdeane/cflr.dev/issues"
 
 [build-system]
 requires = ["setuptools"]
