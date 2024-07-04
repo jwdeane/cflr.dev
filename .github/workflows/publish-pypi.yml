@@ -5,6 +5,10 @@ on:
     paths:
       - "cli/**"
 
+defaults:
+  run:
+    working-directory: ./cli
+
 jobs:
   build:
     name: Build distribution 📦
